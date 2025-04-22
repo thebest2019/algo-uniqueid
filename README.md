@@ -1,10 +1,10 @@
-# @algo/uniqueid - UniqueID Generator 🚀
+# Algo UniqueID Generator 🚀
 
 A lightweight, customizable library for generating unique identifiers with prefixes, timestamps, random strings, and checksums. Perfect for order IDs, user codes, transaction references, and more!
 
-[![npm version](https://img.shields.io/npm/v/@algo/uniqueid)](https://www.npmjs.com/package/@algo/uniqueid)  
+[![npm version](https://img.shields.io/npm/v/algo-uniqueid)](https://www.npmjs.com/package/algo-uniqueid)  
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)  
-[![Tests](https://github.com/mrbest2019/@algo/uniqueid/actions/workflows/tests.yml/badge.svg)](https://github.com/mrbest2019/@algo/uniqueid/actions)
+[![Tests](https://github.com/mrbest2019/algo-uniqueid/actions/workflows/tests.yml/badge.svg)](https://github.com/mrbest2019/algo-uniqueid/actions)
 
 ---
 
@@ -22,9 +22,9 @@ A lightweight, customizable library for generating unique identifiers with prefi
 ## Installation 📦
 
 ```bash
-npm install @algo/uniqueid
+npm install algo-uniqueid
 # or
-yarn add @algo/uniqueid
+yarn add algo-uniqueid
 ```
 
 
@@ -34,7 +34,7 @@ yarn add @algo/uniqueid
 ### Basic Example
 
 ```js
-import { generateCode } from '@algo/uniqueid';
+import { generateCode } from 'algo-uniqueid';
 
 const orderId = generateCode('ORD'); 
 // Example: "ORD-23-K4X9-7B2F5G8H1J3M6P9Q"
@@ -55,7 +55,7 @@ const userId = generateCode('USR', {
 ### Batch Generation
 
 ```js
-import { generateMultipleCodes } from '@algo/uniqueid';
+import { generateMultipleCodes } from 'algo-uniqueid';
 
 const batch = generateMultipleCodes('PRD', 5, { length: 10 });
 // Returns 5 unique codes like ["PRD-23-K4X9-ABC123DEF4", ...]
@@ -64,7 +64,7 @@ const batch = generateMultipleCodes('PRD', 5, { length: 10 });
 ### Custom Formatters
 
 ```js
-import { generateCode, formatters } from '@algo/uniqueid';
+import { generateCode, formatters } from 'algo-uniqueid';
 
 const compactCode = generateCode('ITEM', { 
   formatter: formatters.compact // Remove separators
@@ -75,7 +75,7 @@ const compactCode = generateCode('ITEM', {
 ### Prefix Validation Rules
 
 ```js
-import { setPrefixRules } from '@algo/uniqueid';
+import { setPrefixRules } from 'algo-uniqueid';
 
 setPrefixRules({
   minLength: 3,
