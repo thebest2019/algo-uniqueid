@@ -4,7 +4,7 @@ A lightweight, customizable library for generating unique identifiers with prefi
 
 [![npm version](https://img.shields.io/npm/v/algo-uniqueid)](https://www.npmjs.com/package/algo-uniqueid)  
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)  
-[![Tests](https://github.com/mrbest2019/algo-uniqueid/actions/workflows/tests.yml/badge.svg)](https://github.com/mrbest2019/algo-uniqueid/actions)
+[![Tests](https://github.com/mrbest2019/algo-uniqueid/actions/workflows/main.yml/badge.svg)](https://github.com/mrbest2019/algo-uniqueid/actions)
 
 ---
 
