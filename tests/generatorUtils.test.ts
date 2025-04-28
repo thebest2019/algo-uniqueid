@@ -54,10 +54,6 @@ import {
       expect(code).not.toContain('-');
     });
   
-    it('should throw if prefix is empty', () => {
-      expect(() => generateCode('')).toThrow('Prefix must be a non-empty string');
-    });
-  
     it('should enforce prefix rules if set', () => {
       setPrefixRules({ minLength: 3, allowedChars: /^[A-Z]+$/ });
       expect(() => generateCode('AB')).toThrow('Prefix must be at least 3 characters');
@@ -72,7 +68,7 @@ import {
   
   describe('generateMultipleCodes', () => {
     it('should generate multiple unique codes', () => {
-      const codes = generateMultipleCodes('TEST', 5);
+      const codes = generateMultipleCodes(5, 'TEST');
       expect(codes.length).toBe(5);
       expect(new Set(codes).size).toBe(5); // All codes should be unique
     });

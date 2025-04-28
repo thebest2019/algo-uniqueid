@@ -18,6 +18,14 @@
     "serial-number",
     "wms-id"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thebest2019/algo-uniqueid.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thebest2019/algo-uniqueid/issues"
+  },
+  "homepage": "https://github.com/thebest2019",
   "author": "kosal_soem@outlook.com",
   "license": "MIT",
   "devDependencies": {
