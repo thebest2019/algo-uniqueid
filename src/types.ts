@@ -1,4 +1,4 @@
-import tls from 'tls';
+
 export interface CodeOptions {
   length?: number;
   charset?: string;
@@ -21,6 +21,6 @@ export interface SSLCertificateInfo {
   validFrom: string;
   validTo: string;
   daysRemaining: number;
-  issuer: tls.PeerCertificate['issuer'];
-  subject: tls.PeerCertificate['subject'];
+  issuer: any;
+  subject: any;
 }
