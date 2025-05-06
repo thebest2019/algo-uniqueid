@@ -1,6 +1,6 @@
 {
   "name": "algo-uniqueid",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A lightweight and customizable TypeScript library for generating unique identifiers, secure passwords, and validating SSL certificates. Supports custom formats, batch generation, checksum validation, and built-in SSL certificate checks—perfect for order IDs, transaction refs, user codes, and more.",
   "keywords": [
     "unique-id",
